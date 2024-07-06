@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MenuConfig>
+	<Displayers>
+        <Displayer name="DropDown" 
+                   type="net.sf.navigator.displayer.DropDownMenuDisplayer"/>         				   
+	</Displayers>
+	<Menus>
+	    <Menu name="AdminMenu" title=" 后台管理" description="后台管理" width="80">
+	       <Item name="menu1" title=" 水果类别管理" image="images/icon1.gif" location="Admin/adminCate.do?method=browseCate"/>
+	       <Item name="menu2" title=" 水果管理" image="images/icon2.gif" location="Admin/adminMer.do?method=browseMer"/>
+	       <Item name="menu3" title=" 特价水果管理" image="images/icon2.gif" location="Admin/adminMer.do?method=browseSMer"/>
+	       <Item name="menu4" title=" 会员订单管理" image="images/icon11.gif" location="Admin/adminOrder.do?method=browseOrder"/>
+	       <Item name="menu5" title=" 会员管理" image="images/icon6.gif" location="Admin/adminMember.do?method=browseMember"/>	             	             	             	    
+	       <Item name="menu6" title=" 管理员管理" image="images/icon10.gif" location="Admin/admin.do?method=browseAdmin"/>
+	       <Item name="menu7" title=" 退出登录" image="images/icon12.gif" location="Admin/login.do?method=logout"/>	             
+	    </Menu>	   
+	</Menus>
+</MenuConfig>

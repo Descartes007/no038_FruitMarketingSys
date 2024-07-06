@@ -1,0 +1,129 @@
+<form-validation>
+	<global>
+	<!-- 配置常量表达式 -->
+	   <constant>
+	       <constant-name>phone</constant-name>
+	       <constant-value>^\(?(\d{3})\)?[-| ]?(\d{8})$</constant-value>
+	   </constant>
+	</global>
+	<formset>
+		<form name = "adminForm">
+			<field
+				property = "adminName"
+				depends = "required">
+				<arg0 key = "admin.realname"/>
+			</field>
+			<field
+				property = "loginName"
+				depends = "required">
+				<arg0 key = "admin.loginName"/>
+			</field>
+			<field
+				property = "loginPwd"
+				depends = "required">
+				<arg0 key = "admin.loginPwd"/>
+			</field>						
+		</form>
+		
+		<form name = "cateForm">
+			<field
+				property = "cateName"
+				depends = "required">
+				<arg0 key = "category.table.label1"/>
+			</field>
+			<field
+				property = "cateDesc"
+				depends = "required">
+				<arg0 key = "category.table.label2"/>
+			</field>			
+		</form>
+
+		<form name = "merForm">
+			<field
+				property = "merName"
+				depends = "required">
+				<arg0 key = "mer.name"/>
+			</field>
+			<field
+				property = "merModel"
+				depends = "required">
+				<arg0 key = "mer.model"/>
+			</field>
+			<field
+				property = "price"
+				depends = "required,double">
+				<arg0 key = "mer.price"/>
+			</field>
+			<field
+				property = "merDesc"
+				depends = "required">
+				<arg0 key = "mer.desc"/>
+			</field>
+			<field
+				property = "manufacturer"
+				depends = "required">
+				<arg0 key = "mer.manufacturer"/>
+			</field>
+			<field
+				property = "leaveFactoryDate"
+				depends = "required">
+				<arg0 key = "mer.leaveFactoryDate"/>
+			</field>									
+		</form>	
+		
+		<form name = "memLoginForm">
+			<field
+				property = "loginName"
+				depends = "required">
+				<arg0 key = "member.login.name"/>
+			</field>
+			<field
+				property = "loginPwd"
+				depends = "required">
+				<arg0 key = "member.login.pwd"/>
+			</field>			
+		</form>
+		
+		<form name = "memberForm">
+			<field
+				property = "memberName"
+				depends = "required">
+				<arg0 key = "member.realname"/>
+			</field>		
+			<field
+				property = "loginName"
+				depends = "required">
+				<arg0 key = "member.login.name"/>
+			</field>
+			<field
+				property = "loginPwd"
+				depends = "required">
+				<arg0 key = "member.login.pwd"/>
+			</field>
+			<field
+				property = "phone"
+				depends = "required,mask">
+				<arg0 key = "member.phone"/>
+				<var>
+					<var-name>mask</var-name>
+					<var-value>${phone}</var-value>
+				</var>			
+			</field>
+			<field
+				property = "address"
+				depends = "required">
+				<arg0 key = "member.address"/>
+			</field>
+			<field
+				property = "zip"
+				depends = "required">
+				<arg0 key = "member.zip"/>
+			</field>
+			<field
+				property = "email"
+				depends = "email">
+				<arg0 key = "member.email"/>
+			</field>								
+		</form>								
+	</formset>
+</form-validation>

@@ -1,0 +1,118 @@
+/*
+*  Navigation Menu Styles
+*  Original work:  Dave Lindquist (http://www.gazingus.org)
+*
+*  Modified to support sub menus 2/27/2004 by Ryan Tyer
+*
+*/
+
+@import url(global.css);
+
+body {
+  margin: 0px;
+  padding: 0px
+}
+
+#topMenu {
+  background-color: #EEE;
+  border: 1px solid #CCC;
+  color: #000;
+  margin: 0px;
+  padding: 0px 0px 2px 20px;
+  margin-bottom: 20px;
+}
+
+.menuList {
+  margin: 0px;
+  padding: 0px;
+}
+
+.menuList ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.menuList li {
+  display: inline;
+  list-style: none;
+}
+/* actuators are what trigger the menu display, in conjunction with js */
+a.actuator {
+  background-color: transparent;
+  color: #000;
+  font-size: 12px;
+  margin: 0px;
+  padding: 3px 6px;
+  text-decoration: none;
+}
+
+a.actuator:hover {
+  background-color: #009;
+  color: #EEE;
+}
+/* for submenu */
+a.subactuator {
+  font-weight: bold;
+  background-image: url(../images/arrow.png);
+  background-repeat: no-repeat;
+  background-position: 100% 0px;
+}
+/* The width on the menu's is used in the submenu class.  If you change it here, it must be changed in further down */
+.menu {
+  color: #fff;
+  background-color: #eee;
+  border: 1px solid #999;
+  position: absolute;
+  visibility: hidden;
+  z-index:5;
+  width: 140px;
+}
+
+.menu li a {
+  background-color: transparent;
+  color: #000;
+  display: block;
+  font-size: 12px;
+  line-height: 1.75em;
+  margin: 0px;
+  padding: 0px 10px;
+  text-decoration: underline;
+}
+
+.menu li a:hover {
+  background-color: #009;
+  color: #fff;
+}
+
+/*
+	This is what modifies the display position of the submenu.
+*/
+.submenu {
+  color: #fff;
+  background-color: #eee;
+  border: 1px solid #999;
+  position: absolute;
+  visibility: hidden;
+  left: 140px;
+  width: 110px;
+  text-decoration: none;
+}
+
+span.key {
+  text-decoration: underline;
+}
+
+
+#productsMenu { width: 165px; }
+#plansMenu { width: 160px; }
+#coverageMenu { width: 160px; }
+#companyInfoMenu { width: 165px; }
+#helpMenu { width: 150px; }
+
+
+
+
+
+
+
+

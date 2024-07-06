@@ -1,0 +1,22 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>请选择日期</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #d4d0c8;
+}
+-->
+</style></head>
+<script language="javascript" src="common/selectDate.js"></script>
+<body onLoad="selectDate(selectedDate)" onUnload="returnDate()">
+<input type="hidden" id="selectedDate"  name="selectedDate">
+</body>
+<script language="javascript">
+function returnDate(){	
+	window.returnValue=selectedDate.value;
+	window.close();
+}
+</script>
+</html>

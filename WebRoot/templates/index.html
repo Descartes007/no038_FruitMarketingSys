@@ -1,0 +1,16 @@
+## displayMenu is defined in WEB-INF/classes/globalMacros.vm
+#macro( menuItem $menu $level )
+  #set ($title = $displayer.getMessage($menu.title))
+  #if ($stringUtils.indexOf($menu.url, "velocity") > -1 && !$writeNewSeparator)
+    </ul>
+    <h3>New and Cool Examples</h3>
+    <ul class="glassList">
+    #set($writeNewSeparator = "false")
+  #end
+  #if ($menu.url)
+      <li><a href="$!menu.url" title="$title">$title</a>
+      #if ($menu.toolTip)- $!menu.toolTip #end</li>
+  #end
+#end
+
+#displayMenu($menu 0)

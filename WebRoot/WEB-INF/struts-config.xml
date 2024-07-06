@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    <form-bean name="loginForm" type="com.struts.form.LoginForm" />
+    <form-bean name="adminForm" type="com.struts.form.AdminForm" />
+    <form-bean name="cateForm" type="com.struts.form.CateForm" />
+    <form-bean name="merForm" type="com.struts.form.MerForm" />
+    <form-bean name="memLoginForm" type="com.struts.form.MemLoginForm" />
+    <form-bean name="memberForm" type="com.struts.form.MemberForm" />
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards >
+    <forward name="addAdmin" path="/Admin/adminAddUser.jsp" />
+  	<forward name="sorry" path="/Admin/sorry.jsp"/>
+    <forward name="addCate" path="/Admin/adminAddCate.jsp" />
+    <forward name="addMer" path="/Admin/adminAddMer.jsp" />
+    <forward name="addSMer" path="/Admin/adminAddSMer.jsp" />
+    <forward name="index" path="/default.jsp" />
+    <forward name="memSorry" path="/sorry.jsp" />
+  </global-forwards>
+
+  <action-mappings >
+    <action
+      attribute="loginForm"
+      input="/Admin/adminLogin.jsp"
+      name="loginForm"
+      parameter="method"
+      path="/Admin/login"
+      scope="request"
+      type="com.struts.action.AdminLoginAction">
+      <forward name="logoutSuccess" path="/Admin/toLogin.htm" />
+      <forward name="loginSuccess" path="/Admin/adminIndex.jsp" />
+    </action>
+    <action
+      attribute="adminForm"
+      input="/Admin/adminAddUser.jsp"
+      name="adminForm"
+      parameter="method"
+      path="/Admin/admin"
+      scope="request"
+      type="com.struts.action.AdminAction">
+      <forward name="browse" path="/Admin/adminUser.jsp" />
+      <forward name="modify" path="/Admin/adminModiUser.jsp" />
+      <forward name="delete" path="/Admin/admin.do?method=browseAdmin" />      
+    </action>
+    <action
+      attribute="cateForm"
+      input="/Admin/adminAddCate.jsp"
+      name="cateForm"
+      parameter="method"
+      path="/Admin/adminCate"
+      scope="request"
+      type="com.struts.action.AdminCateAction">
+      <forward name="browse" path="/Admin/adminCate.jsp" />
+      <forward name="modify" path="/Admin/adminModiCate.jsp" />
+      <forward name="delete" path="/Admin/adminCate.do?method=browseCate" />      
+     </action>
+    <action
+      attribute="merForm"
+      input="/Admin/adminAddMer.jsp"
+      name="merForm"
+      parameter="method"
+      path="/Admin/adminMer"
+      scope="request"
+      type="com.struts.action.AdminMerAction"> 
+      <forward name="browse" path="/Admin/adminMer.jsp" />
+      <forward name="modify" path="/Admin/adminModiMer.jsp" />
+      <forward name="delete" path="/Admin/adminMer.do?method=browseMer" />
+      <forward name="show" path="/Admin/adminViewMer.jsp" /> 
+      <forward name="browseSMer" path="/Admin/adminSMer.jsp" />
+      <forward name="modifySMer" path="/Admin/adminModiSMer.jsp" />
+      <forward name="deleteSMer" path="/Admin/adminMer.do?method=browseSMer" />
+      <forward name="showSMer" path="/Admin/adminViewSMer.jsp" />         
+    </action>
+    <action
+      attribute="memLoginForm"
+      input="/default.jsp"
+      name="memLoginForm"
+      parameter="method"
+      path="/login"
+      scope="request"
+      type="com.struts.action.LoginAction" />
+    <action
+      parameter="method"
+      path="/mer"
+      type="com.struts.action.MerAction">
+      <forward name="browseMer" path="/merchandise.jsp" />
+      <forward name="browseSMer" path="/sMerchandise.jsp" />
+      <forward name="searchMer" path="/search.jsp" />
+      <forward name="showMer" path="/merInfo.jsp" />      
+    </action>  
+    <action
+      attribute="memberForm"
+      input="/reg.jsp"
+      name="memberForm"
+      parameter="method"
+      path="/mem"
+      scope="request"
+      type="com.struts.action.MemAction">
+      <forward name="browseWord" path="/leaveword.jsp"/>
+      <forward name="loadMember" path="/modiReg.jsp"/>      
+    </action>
+    <action
+      parameter="method"
+      path="/cart"
+      type="com.struts.action.CartAction">
+      <forward name="browseCart" path="/cart.jsp"/>
+      <forward name="checkOrder" path="/checkOrder.jsp"/>
+      <forward name="submitOrder" path="/submitOrder.jsp"/>            
+    </action>
+    <action
+      parameter="method"
+      path="/order"
+      type="com.struts.action.OrderAction">
+      <forward name="browseOrder" path="/Order.jsp"/>
+      <forward name="viewOrder" path="/OrderInfo.jsp"/>
+    </action>
+    <action
+      parameter="method"
+      path="/Admin/adminOrder"
+      type="com.struts.action.AdminOrderAction"> 
+      <forward name="browseOrder" path="/Admin/adminOrder.jsp"/>
+      <forward name="viewOrder" path="/Admin/OrderInfo.jsp"/>      
+    </action>
+    <action
+      parameter="method"
+      path="/Admin/adminMember"
+      type="com.struts.action.AdminMemberAction">
+      <forward name="browseWord" path="/Admin/adminWord.jsp" />
+      <forward name="browseMember" path="/Admin/adminMember.jsp" />
+      <forward name="viewWord" path="/Admin/WordInfo.jsp" />
+      <forward name="viewMember" path="/Admin/MemberInfo.jsp" />
+    </action>  
+  </action-mappings>
+
+  <message-resources parameter="com.struts.ApplicationResources" />
+
+  <!--配置struts-menu插件-->
+  <plug-in className="net.sf.navigator.menu.MenuPlugIn">
+    <set-property property="menuConfig" value="/WEB-INF/menu-config.xml"/>
+  </plug-in>
+
+  <!--配置Validator插件-->
+  <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+    <set-property property="pathnames" value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml" />
+  </plug-in>
+      
+</struts-config>
+

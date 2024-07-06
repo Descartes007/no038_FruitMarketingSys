@@ -1,0 +1,35 @@
+## displayMenu is defined in WEB-INF/classes/globalMacros.vm
+#macro( menuItem $menu $level )
+  ## set parentName
+  #if ($menu.parent) #set ($parentName = $menu.parent.name)
+  #else #set ($parentName = "")
+  #end
+  ## set title and arrow image
+  #set ($title = $displayer.getMessage($menu.title))
+  ## set link
+  #if ($menu.url) #set ($link = $menu.url) #else #set ($link = "")
+  #end
+  ## set target
+  #if ($menu.target) #set ($target = $menu.target) #else #set ($target = "")
+  #end
+  ## set width
+  #if ($menu.width) #set ($width = $menu.width) #else #set ($width = "")
+  #end
+  ## set height
+  #if ($menu.height) #set ($height = $menu.height) #else #set ($height = "")
+  #end
+  ## set image
+  #if ($menu.image) 
+    ## disable images by default - it looks bad with the current images
+    ##set ($title = "<img src=\'$menu.image\' style=\'border: 0\' /> $title") 
+  #end
+  ##---------------------------------------------------------------------------
+  ## oCMenu.makeMenu(name, parent_name, text, link, target, width, height, 
+  ## regImage, overImage, regClass, overClass , align, rows, nolink, onclick, 
+  ## onmouseover, onmouseout) 
+  ##---------------------------------------------------------------------------
+oCMenu.makeMenu('$menu.name','$parentName','$title','$link','$target');
+#end
+
+#displayMenu($menu 0)
+

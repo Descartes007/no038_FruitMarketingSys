@@ -1,0 +1,15 @@
+## displayMenu is defined in WEB-INF/classes/globalMacros.vm
+#macro( menuItem $menu $level )
+  ## set title
+  #set ($title = $displayer.getMessage($menu.title))
+  #set ($node = $menu.name)
+  #if ($level == 0)
+    var $node = new WebFXTree('$title'#if($menu.url),'$!menu.url'#end);
+  #else
+    var $node = new WebFXTreeItem('$title'#if($menu.url),'$!menu.url'#end);
+    ${menu.parent.name}.add($node);
+  #end
+#end
+
+#displayMenu($menu 0)
+document.write($menu.name);

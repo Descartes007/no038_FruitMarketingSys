@@ -1,0 +1,10 @@
+## displayMenu is defined in WEB-INF/classes/globalMacros.vm
+#macro( menuItem $menu $level )
+  ## set title
+  #set ($title = $displayer.getMessage($menu.title))
+  #if ($level == 1)
+    <li><a href="$!{menu.url}" title="$title">${title}</a></li>
+  #end
+#end
+
+#displayMenu($menu 0)

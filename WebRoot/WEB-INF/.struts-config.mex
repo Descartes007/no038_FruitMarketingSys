@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/Admin/login.do" location="50,50" dimension="211,88" />
+  <StrutsActivity path="/Admin/admin.do" location="950,150" dimension="186,88" />
+  <StrutsActivity path="/Admin/adminCate.do" location="650,450" dimension="209,88" />
+  <StrutsActivity path="/Admin/adminMer.do" location="50,650" dimension="204,88" />
+  <StrutsActivity path="/login.do" location="1250,650" dimension="182,88" />
+  <StrutsActivity path="/mer.do" location="350,850" dimension="175,88" />
+  <StrutsActivity path="/mem.do" location="1250,850" dimension="179,88" />
+  <StrutsActivity path="/cart.do" location="650,950" dimension="178,88" />
+  <StrutsActivity path="/order.do" location="1550,1050" dimension="185,88" />
+  <StrutsActivity path="/Admin/adminOrder.do" location="1850,750" dimension="214,88" />
+  <StrutsActivity path="addAdmin;6" location="350,150" dimension="163,75" />
+  <StrutsActivity path="sorry;6" location="50,350" dimension="119,75" />
+  <StrutsActivity path="addCate;6" location="350,350" dimension="164,75" />
+  <StrutsActivity path="addMer;6" location="350,550" dimension="159,75" />
+  <StrutsActivity path="addSMer;6" location="650,750" dimension="165,75" />
+  <StrutsActivity path="index;6" location="950,850" dimension="95,75" />
+  <StrutsActivity path="memSorry;6" location="950,1050" dimension="91,75" />
+  <StrutsActivity path="/Admin/toLogin.htm" location="350,50" dimension="123,49" />
+  <StrutsActivity path="/Admin/adminIndex.jsp" location="650,50" dimension="140,49" />
+  <StrutsActivity path="/Admin/adminLogin.jsp" location="950,50" dimension="137,49" />
+  <StrutsActivity path="/Admin/adminModiUser.jsp" location="50,250" dimension="156,49" />
+  <StrutsActivity path="/Admin/adminUser.jsp" location="650,250" dimension="134,49" />
+  <StrutsActivity path="/Admin/adminAddUser.jsp" location="650,150" dimension="153,49" />
+  <StrutsActivity path="/Admin/adminModiCate.jsp" location="950,350" dimension="157,49" />
+  <StrutsActivity path="/Admin/adminCate.jsp" location="50,550" dimension="135,49" />
+  <StrutsActivity path="/Admin/adminAddCate.jsp" location="650,350" dimension="154,49" />
+  <StrutsActivity path="/Admin/adminModiMer.jsp" location="650,650" dimension="152,49" />
+  <StrutsActivity path="/Admin/adminViewSMer.jsp" location="1250,350" dimension="158,49" />
+  <StrutsActivity path="/Admin/adminSMer.jsp" location="1250,450" dimension="136,49" />
+  <StrutsActivity path="/Admin/adminMer.jsp" location="950,650" dimension="130,49" />
+  <StrutsActivity path="/Admin/adminViewMer.jsp" location="350,750" dimension="152,49" />
+  <StrutsActivity path="/Admin/adminModiSMer.jsp" location="1250,550" dimension="158,49" />
+  <StrutsActivity path="/Admin/adminAddMer.jsp" location="950,550" dimension="149,49" />
+  <StrutsActivity path="/default.jsp" location="50,850" dimension="85,49" />
+  <StrutsActivity path="/sMerchandise.jsp" location="1550,550" dimension="116,49" />
+  <StrutsActivity path="/merchandise.jsp" location="1550,650" dimension="111,49" />
+  <StrutsActivity path="/merInfo.jsp" location="1550,750" dimension="89,49" />
+  <StrutsActivity path="/search.jsp" location="1550,850" dimension="83,49" />
+  <StrutsActivity path="/modiReg.jsp" location="1850,550" dimension="92,49" />
+  <StrutsActivity path="/leaveword.jsp" location="1850,650" dimension="101,49" />
+  <StrutsActivity path="/reg.jsp" location="50,950" dimension="67,49" />
+  <StrutsActivity path="/submitOrder.jsp" location="1550,950" dimension="110,49" />
+  <StrutsActivity path="/checkOrder.jsp" location="50,1050" dimension="106,49" />
+  <StrutsActivity path="/cart.jsp" location="350,1050" dimension="70,49" />
+  <StrutsActivity path="/OrderInfo.jsp" location="50,1150" dimension="99,49" />
+  <StrutsActivity path="/Order.jsp" location="350,1150" dimension="79,49" />
+  <StrutsActivity path="/Admin/OrderInfo.jsp" location="1850,950" dimension="132,49" />
+  <StrutsActivity path="/Admin/adminOrder.jsp" location="1850,1050" dimension="140,49" />
+  <StrutsActivity path="/Admin/sorry.jsp" location="950,450" dimension="109,49" />
+  <StrutsActivity path="/Admin/adminAddSMer.jsp" location="950,750" dimension="155,49" />
+  <StrutsActivity path="/sorry.jsp" location="1250,1050" dimension="76,49" />
+  <StrutsActivity path="" location="650,1150" dimension="29,49" />
+  <StrutsActivity path="/Admin/adminMember.do" location="1250,1150" dimension="224,88" />
+  <StrutsActivity path="/Admin/adminWord.jsp" location="1850,1150" dimension="138,49" />
+  <StrutsActivity path="/Admin/adminMember.jsp" location="50,1250" dimension="150,49" />
+  <StrutsActivity path="/Admin/WordInfo.jsp" location="350,1250" dimension="130,49" />
+  <StrutsActivity path="/Admin/MemberInfo.jsp" location="650,1250" dimension="142,49" />
+  <StrutsTransition id="/order.do,browseOrder,/Order.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1672,1138" />
+      <AbsolutePoint location="1672,1404" />
+      <AbsolutePoint location="495,1404" />
+      <AbsolutePoint location="495,1174" />
+      <AbsolutePoint location="429,1174" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/adminOrder.do,viewOrder,/Admin/OrderInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1957,794" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mer.do,searchMer,/search.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="437,894" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/adminCate.do,delete,/Admin/adminCate.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="754,494" />
+      <AbsolutePoint location="754,494" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mem.do,browseWord,/leaveword.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1339,894" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/adminAddMer.jsp,null,/Admin/adminMer.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1024,599" />
+      <AbsolutePoint location="1024,694" />
+      <AbsolutePoint location="254,694" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="index;6,null,/default.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,887" />
+      <AbsolutePoint location="540,887" />
+      <AbsolutePoint location="540,814" />
+      <AbsolutePoint location="92,814" />
+      <AbsolutePoint location="92,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/login.do,logoutSuccess,/Admin/toLogin.htm,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="261,84" />
+      <AbsolutePoint location="350,84" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/adminCate.do,modify,/Admin/adminModiCate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="754,494" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="sorry;6,null,/Admin/sorry.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/adminLogin.jsp,null,/Admin/login.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1018,50" />
+      <AbsolutePoint location="1018,-25" />
+      <AbsolutePoint location="155,-25" />
+      <AbsolutePoint location="155,50" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/adminMember.do,browseWord,/Admin/adminWord.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1474,1184" />
+      <AbsolutePoint location="1850,1184" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/adminMer.do,modify,/Admin/adminModiMer.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="152,694" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/admin.do,browse,/Admin/adminUser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1043,238" />
+      <AbsolutePoint location="1043,274" />
+      <AbsolutePoint location="784,274" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="addCate;6,null,/Admin/adminAddCate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="514,384" />
+      <AbsolutePoint location="650,384" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cart.do,submitOrder,/submitOrder.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="828,984" />
+      <AbsolutePoint location="1550,984" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/adminCate.do,browse,/Admin/adminCate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="754,494" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/adminMember.do,browseMember,/Admin/adminMember.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,1214" />
+      <AbsolutePoint location="125,1214" />
+      <AbsolutePoint location="125,1250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mer.do,browseMer,/merchandise.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="437,894" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/admin.do,delete,/Admin/admin.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1043,150" />
+      <AbsolutePoint location="1043,114" />
+      <AbsolutePoint location="1211,114" />
+      <AbsolutePoint location="1211,194" />
+      <AbsolutePoint location="1136,194" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mer.do,browseSMer,/sMerchandise.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="437,894" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/adminMer.do,deleteSMer,/Admin/adminMer.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="152,694" />
+      <AbsolutePoint location="152,694" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/default.jsp,null,/login.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="135,874" />
+      <AbsolutePoint location="306,874" />
+      <AbsolutePoint location="306,724" />
+      <AbsolutePoint location="1250,724" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cart.do,browseCart,/cart.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="739,1038" />
+      <AbsolutePoint location="739,1074" />
+      <AbsolutePoint location="420,1074" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/adminMer.do,browse,/Admin/adminMer.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="152,694" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/adminMer.do,showSMer,/Admin/adminViewSMer.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="152,694" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cart.do,checkOrder,/checkOrder.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,1014" />
+      <AbsolutePoint location="102,1014" />
+      <AbsolutePoint location="102,1050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="memSorry;6,null,/sorry.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1041,1084" />
+      <AbsolutePoint location="1250,1084" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mer.do,showMer,/merInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="437,894" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="addAdmin;6,null,/Admin/adminAddUser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="513,184" />
+      <AbsolutePoint location="650,184" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/adminOrder.do,browseOrder,/Admin/adminOrder.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1957,794" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="addSMer;6,null,/Admin/adminAddSMer.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="815,784" />
+      <AbsolutePoint location="950,784" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/adminAddCate.jsp,null,/Admin/adminCate.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="727,399" />
+      <AbsolutePoint location="727,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/login.do,loginSuccess,/Admin/adminIndex.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="261,114" />
+      <AbsolutePoint location="720,114" />
+      <AbsolutePoint location="720,99" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="addMer;6,null,/Admin/adminAddMer.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="509,584" />
+      <AbsolutePoint location="950,584" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order.do,viewOrder,/OrderInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1642,1138" />
+      <AbsolutePoint location="1642,1314" />
+      <AbsolutePoint location="215,1314" />
+      <AbsolutePoint location="215,1174" />
+      <AbsolutePoint location="149,1174" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/adminMer.do,show,/Admin/adminViewMer.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="152,694" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/adminMer.do,modifySMer,/Admin/adminModiSMer.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="152,694" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/adminMer.do,browseSMer,/Admin/adminSMer.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="152,694" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/adminMember.do,viewWord,/Admin/WordInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1392,1238" />
+      <AbsolutePoint location="1392,1344" />
+      <AbsolutePoint location="415,1344" />
+      <AbsolutePoint location="415,1299" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/adminMember.do,viewMember,/Admin/MemberInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1362,1238" />
+      <AbsolutePoint location="1362,1274" />
+      <AbsolutePoint location="792,1274" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/reg.jsp,null,/mem.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="117,974" />
+      <AbsolutePoint location="618,974" />
+      <AbsolutePoint location="618,1374" />
+      <AbsolutePoint location="1060,1374" />
+      <AbsolutePoint location="1060,894" />
+      <AbsolutePoint location="1250,894" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/admin.do,modify,/Admin/adminModiUser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,214" />
+      <AbsolutePoint location="588,214" />
+      <AbsolutePoint location="588,274" />
+      <AbsolutePoint location="206,274" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mem.do,loadMember,/modiReg.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1339,894" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/adminAddUser.jsp,null,/Admin/admin.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="803,174" />
+      <AbsolutePoint location="950,174" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Admin/adminMer.do,delete,/Admin/adminMer.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="152,694" />
+      <AbsolutePoint location="152,694" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

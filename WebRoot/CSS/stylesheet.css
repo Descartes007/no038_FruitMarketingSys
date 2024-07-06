@@ -1,0 +1,149 @@
+/* 超级链接样式 */
+a:link          { color: #000000; text-decoration: none }
+a:visited       { color: #000000; text-decoration: none }
+a:active        { color: #000000; text-decoration: none }
+a:hover         { color: #ff0000; text-decoration: none; position: relative; right: 0px; top: 1px }
+
+/* 通用样式 */
+.C_Font{ font-weight:bold;}
+.Red{ color:#FF0000; font-weight:bold;}
+.Sell_Title{ text-align:center;background:url(../images/icon_sell.gif) top no-repeat left;
+ font-weight:bold; font-size:14px; color:#FFFFFF; height:30px;}
+.UserName{ padding:4px 0;}
+.UserName input{ width:100px; border:1px solid #666;}
+.UserRegster{  padding:5px 8px 5px 0;}
+.UserRegster a,.UserRegster a:link,.UserRegster a:visited{ color:#f50;}
+.UserRegster input{ background:url(../images/button.gif) no-repeat; width:73px; height:23px; border:0px; cursor:hand;}
+.LoginTitle{text-align:center;background:url(../images/icon_login.gif) top no-repeat left;font-weight:bold; font-size:14px; color:#FFFFFF; height:30px;}
+.Logo{ text-align:center; vertical-align:top; margin:8px 0;}
+.Item01Menu{ text-align:right; vertical-align:top;}
+.Item01Menu a{ padding:2px 10px; background:url(../images/dot_main01.gif) no-repeat left;}
+.C_Item_Title{ background:url(../images/icon05.gif) no-repeat center;font-weight:bold; text-align:center; color:#fff; height:34px;}
+.C_Item_Title a,.C_Item_Title a:link,.C_Item_Title a:visited{font-weight:bold; text-align:center; color:#fff;}
+
+.C_login_Title{ background:url(../images/icon06.gif) no-repeat center;font-weight:bold;font-size:12px; text-align:center; color:#fff; height:34px; padding-top:10px;}
+.C_Sell_Title{ background:url(../images/icon03.gif) no-repeat center;font-weight:bold; text-align:center; color:#fff; height:34px; padding-top:10px;}
+.C_DC_Title{ background:url(../images/DC.gif) no-repeat center;font-weight:bold; text-align:center; color:#fff; height:34px; padding-top:10px;}
+.C_Sort_Title{ background:url(../images/icon01.gif) no-repeat center;font-weight:bold;font-size:12px; text-align:center; color:#fff; height:34px; padding-top:10px;}
+.C_Sort_Title a,.C_Sort_Title a:link,.C_Sort_Title a:visited{ color:#fff;}
+.C_Search_Title{ background:url(../images/Recomm_05.gif) no-repeat center;font-weight:bold; text-align:center; color:#fff; height:34px; padding-top:10px;}
+.C_Help_Title{ padding:4px 0;}
+.C_Help_Title a{ background:url(../images/icon_sell.gif) no-repeat center;font-weight:bold;  color:#fff; height:24px;  padding-left:15px; width:175px; padding-top:5px;}
+.C_Help_Title a,.C_Help_Title a:link,.C_Help_Title a:visited{ color:#fff;}
+
+.C_Goods_Title{ border:1px solid #ccc; background:url(../images/Bule_46.gif) repeat-x; margin-bottom:5px; height:32px;}
+.C_Goods_Border{ border-top:4px solid #4380CC; padding-top:10px;}
+.C_Item_bg{ background:url(../images/Bule_56.gif) repeat-y; padding:3px 8px;}
+.C_pages{ padding:5px 10px; text-align:center;}
+
+.C_Input{ background:url(../images/button2.gif) no-repeat; width:73px; height:23px; border:0px; cursor:hand; color:#333;}
+.input{ color:#f50;height:18px; }
+.C_Input02{background:url(../images/button.gif) no-repeat; width:73px; height:23px; border:0px; cursor:hand; color:#333;}
+.C_Input03{background:url(../images/btn_2.png) no-repeat; width:69px; height:28px; border:0px; cursor:hand; color:#fff;}
+.Register{background:url(../images/btn_1.png) no-repeat; width:105px; height:28px; border:0px; cursor:hand;  text-align:center; padding-top:6px;}
+
+.Order_Table{ margin:15px 0;}
+.Order_Table td{ font-size:14px;}
+.Order_Font{ color:#FF0000; font-weight:bold;}
+.Order_Title{ font-size:14px; font-weight:bold; padding:4px 5px;}
+.Order_Total{  font-weight:bold; padding:5px 10px 0 10px; color:#FF0000; text-align:center; font-size:14px;}
+.Car_Leftbg{ background:url(../images/Car_05.gif) repeat-y left; width:8px;}
+.Car_Rightbg{ background:url(../images/Car_13.gif) repeat-y right; width:8px;}
+.C_Carbg_Default{ background:url(../images/Car_21.gif) no-repeat center;font-size:12px; text-align:center; width:150px;}
+.C_Carbg_Current{ background:url(../images/Car_18.gif) no-repeat center;font-size:12px; text-align:center; color:#fff; width:150px;}
+.Onlinpay{
+}
+.Onlinpay input{ background:url(../images/Car_icon_07.gif) no-repeat center; width:115px; height:30px; border:0px; cursor:hand; padding-bottom:8px; padding-right:8px;}
+
+/* 文本框样式 */
+.textBox{
+	border-bottom:1px;
+	border-left:1px;
+	border-right:1px;
+	border-top:1px;
+	border-color:#666666;
+	border-style:solid;
+}
+
+/* 粗标题样式 */
+.itemTitle {
+	font-family: "黑体", "Arial Black";
+	font-size: 16px;
+	line-height: 40px;
+	font-weight: 200;
+	color: #000000;
+	text-decoration: none;
+	letter-spacing: 5px;
+}
+
+/* 蓝色链接样式 */
+.blueText {
+	font-family: "宋体", System;
+	font-size: 12px;
+	line-height: 20px;
+	color: #0033CC;
+	text-decoration: none;
+}
+
+/* 红色文字样式 */
+.redText {
+	font-family: "宋体", System;
+	font-size: 12px;
+	line-height: 20px;
+	color: #FF0000;
+	text-decoration: none;
+}
+
+/* 普通文字样式 */
+.text {
+	font-family: "宋体", System;
+	font-size: 12px;
+	line-height: 20px;
+	color: #000000;
+	text-decoration: none;
+}
+
+/* 页面样式 */
+.body {
+	margin-left: 0px;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	background-color:13a62f;
+	
+	/* 
+	background-image: url(../images/backGroup.gif);	
+	 */
+}
+
+/* 导航菜单样式 */
+.header_menu{background:url(../images/header_menu_02.gif) repeat-x;}
+
+/* 导航菜单样式 */
+.whiteTitle{
+	font-family: "宋体", System;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;	
+}
+
+/* 白色文本样式 */
+.whiteText {
+	font-family: "宋体", System;
+	font-size: 12px;
+	line-height: 20px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+/* 加粗文字样式 */
+.blackTitle {
+	font-family: "宋体", System;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 20px;
+	color: #000000;
+	text-decoration: none;
+}
